@@ -1,10 +1,11 @@
-import React from 'react'
-import { Switch, Route, BrowserRouter } from 'react-router-dom'
-import { StylesProvider } from '@material-ui/core/styles'
-import Landing from './components/Landing'
-import Pricing from './components/Pricing'
+import React from 'react';
+import { Switch, Route, BrowserRouter } from 'react-router-dom';
+import { StylesProvider } from '@material-ui/core/styles';
 
-const App = () => {
+import Landing from './components/Landing';
+import Pricing from './components/Pricing';
+
+export default () => {
   return (
     <div>
       <StylesProvider>
@@ -16,7 +17,5 @@ const App = () => {
         </BrowserRouter>
       </StylesProvider>
     </div>
-  )
-}
-
-export default App
+  );
+};
